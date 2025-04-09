@@ -98,7 +98,7 @@ Esto fue útil para sincronizar las tablas de energía_*
 sudo apt install percona-toolkit
 ```
 
-1. Ver operaciones que ejecutará
+2. Ver operaciones que ejecutará
 ```
 pt-table-sync \
   --sync-to-master h=[IP_nodo_desactualizado] \
@@ -107,7 +107,7 @@ pt-table-sync \
   --verbose --print
 ```
 
-1. Ejecutar sincronización desde el nodo desactualizado
+3. Ejecutar sincronización desde el nodo desactualizado
 ```
 pt-table-sync \
   --sync-to-master h=[IP_nodo_desactualizado] \
@@ -116,7 +116,7 @@ pt-table-sync \
   --verbose --execute
 ```
 
-1. Verificar la tabla luego
+4. Verificar la tabla luego
 ```
 php verificarReplicaPorTabla [tabla_desactualizada]
 ```
